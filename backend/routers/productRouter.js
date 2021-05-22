@@ -7,11 +7,12 @@ const productRouter = express.Router();
 
 productRouter.get('/', expressAsyncHandler(async (req, res) =>{
     const products = await Product.find({});
+    //  find function main empty object pass kiya hain mtlb return all objects
     res.send(products);
 }))
 
 productRouter.get('/seed', expressAsyncHandler(async (req, res) => {
-    // await Product.remove({});
+    await Product.remove({});
     const createdProducts = await Product.insertMany(mytemplate.products)
     res.send({ createdProducts });
 }))

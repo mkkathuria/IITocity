@@ -14,6 +14,7 @@ export const addToCart = (productId, qty) => async(dispatch, getState) =>{
             qty, 
         },
     });
+    // agr page dobara refresh ya re render hota hai to cart ki items dobara 0 na ho to hm usko local storage main rakh rahe hai and uske bad store ki initial state main usko rakh rahe hai
     localStorage.setItem('cartItems', JSON.stringify(getState().cart.cartItems));
 };
 

@@ -19,6 +19,7 @@ app.get('/', (req, res) => {
     res.send('Server is ready');
 })
 
+//userrouter vgera  main ek module download kiya hai express handler uske karan jo bhi error aayega vo niche wala function deal krega 
 app.use((err, req, res, next) => {
     res.status(500).send({ message: err.message })
 })
