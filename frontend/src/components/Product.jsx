@@ -8,9 +8,9 @@ class Product extends Component {
     const product = this.props.product;
 
     return (
-      <div key="product._id" className="card">
+      <div key="product._id" className="card product">
         <Link to={`/product/${product._id}`}>
-          <img className="medium" src={product.image} alt={product.name} />
+          <img className="medium product" src={product.image} alt={product.name} />
         </Link>
         <div className="card-body">
           <Link to={`/product/${product._id}`}>
