@@ -73,7 +73,7 @@ export default function SigninScreen(props) {
           <div>
             <div className="divaboveregisterbutton ">New customer? </div>
             <div className="divaboveregisterbutton ">
-              <Link to={`/register?redirect=${redirect}`} className="register">
+              <Link to={`/register?redirect=${redirect}`} style={{textDecoration: 'underline'}} className="register">
                 Create your IITocity account
               </Link>
             </div>

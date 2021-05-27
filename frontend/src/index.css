@@ -83,6 +83,9 @@ button.primary {
 button.block {
   width: 100%;
 }
+button.small {
+  font-size: 1.2rem;
+}
 
 header {
   grid-area: header;
@@ -111,8 +114,9 @@ footer {
   margin-top: 3rem;
 }
 .col-1 {
-  margin-left: 50px;
+  margin-left: 150px;
   flex: 1 1 25;
+  width: 50rem;
 }
 .col-2 {
   flex: 2 1 50;
@@ -241,6 +245,11 @@ img.medium.product {
   background-color: #ffe0e0e0;
 }
 
+.alert-success {
+  color: #20a020;
+  background-color: #eeffe0;
+}
+
 /* Form */
 .form {
   max-width: 35rem;
@@ -313,4 +322,23 @@ img.medium.product {
 .checkout-steps > div.active {
   border-top-color: #f08000;
   color: #f08000;
+}
+
+/* Table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table tbody tr:nth-of-type(odd){
+  background-color: #f4f4f4;
+}
+.table td,
+.table th {
+  text-align: left;
+  border: 0.1 rem solid #e4e4e4;
+  padding: 0.5rem;
+}
+.table button {
+  margin: 0 0.2rem;
 }
